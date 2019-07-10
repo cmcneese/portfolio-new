@@ -1,0 +1,32 @@
+.navbar {
+  color: white;
+}
+
+.lower-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: $c-nav-bar-bottom;
+  color: $c-white;
+  font-size: 2.5rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 22rem;
+    margin: 0;
+
+    &--nav-item a {
+      color: $c-white;
+      text-decoration: none;
+    }
+  }
+}

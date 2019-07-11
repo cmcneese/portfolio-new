@@ -14,3 +14,7 @@ $breakpoint-large: 1230px;
 @import 'blog';
 @import 'reset';
 @import 'layout';
+
+* {
+  background: rebeccapurple;
+}

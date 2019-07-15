@@ -1,20 +1,20 @@
- $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
- $c-white: rgba(255, 255, 255, 1);
- $c-hero-blue: rgba(245, 245, 245, 1);
- $c-nav-bar-bottom: rgba(34, 34, 34, 1);
- $c-blog-red: rgb(236, 49, 35);
- $breakpoint-tiny: 45rem 75rem;
- $breakpoint-small: 77rem 100rem;
- $breakpoint-medium: 992px 1229px;
- $breakpoint-large: 1230px;
 
+/*
  @import 'box-sizing';
- @import 'navbar';
- @import 'content';
- @import 'blog';
- @import 'reset';
- @import 'layout';
+ /* @import 'navbar'; */
+ /* @import 'content'; */
+ /* @import 'blog'; */
+ /* @import 'reset'; */
+ /* @import 'layout'; */
 
 * {
-  background-color: rebeccapurple;
+  background-color: rgba(200, 250, 100, 1);
+}
+
+.navbar {
+  background-color: pink;
+}
+
+.navbar_menu {
+  color: #000;
 }

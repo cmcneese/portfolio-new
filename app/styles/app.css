@@ -1,14 +1,13 @@
 
-/*
- @import 'box-sizing';
- /* @import 'navbar'; */
- /* @import 'content'; */
- /* @import 'blog'; */
- /* @import 'reset'; */
- /* @import 'layout'; */
-
 * {
-  background-color: rgba(200, 250, 100, 1);
+  background-color: rgba(254, 250, 100, 1);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4rem;
+}
+
+body {
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
@@ -16,5 +15,5 @@
 }
 
 .navbar_menu {
-  color: #000;
+  background-color: #000;
 }

@@ -1,19 +1,63 @@
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-white: rgba(255, 255, 255, 1);
+$c-hero-blue: rgba(245, 245, 245, 1);
+$c-nav-bar-bottom: rgba(34, 34, 34, 1);
+$c-blog-red: rgb(236, 49, 35);
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$breakpoint-tiny: 45rem 75rem;
+$breakpoint-small: 77rem 100rem;
+$breakpoint-medium: 992px 1229px;
+$breakpoint-large: 1230px;
 
-* {
-  background-color: rgba(254, 250, 100, 1);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 4rem;
+@import 'box-sizing';
+@import 'navbar';
+@import 'content';
+@import 'blog';
+@import 'reset';
+@import 'layout';
+
+.profile-pic {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+  border: solid white 2px;
 }
 
-body {
-  color: #000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.about-picture {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+    object-fit: cover;
+    filter: grayscale(4%);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    color: $c-nav-bar-bottom;
+    visibility: hidden;
+  }
+
+  &__img:hover {
+    transition: 1s;
+    filter: grayscale(100%);
+  }
 }
 
-.navbar {
-  background-color: pink;
+.about-picture {
+  &:hover {
+    .about-picture__caption {
+      transition: 2s;
+      visibility: visible;
+    }
+  }
 }
 
-.navbar_menu {
-  background-color: #000;
+/*Style Nav Links to Right side of Nav Bar*/
+.navbar-collapse {
+  justify-content: flex-end;
 }

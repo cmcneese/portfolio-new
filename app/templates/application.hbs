@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <link rel="stylesheet" type="text/css" href="./app/styles/app.css">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris McNeese</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <li>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-      </li>
-    </div>
-    <div class="container">
-
-      <p>Hello World</p>
-
-    </div>
-  </body>
-</html>
+<div class="full-page">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
+    <a href="" class="navbar">Chris McNeese</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      {{#link-to "index" class="nav-link"}}Portfolio{{/link-to}}
+    </li>
+    <li class="nav-item">
+      {{#link-to "about" class="nav-link"}}About{{/link-to}}
+    </li>
+    <li class="nav-item">
+      {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
+    </li>
+  </ul>
+</div>
+  </nav>
+</div>
 {{outlet}}

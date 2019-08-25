@@ -50,6 +50,8 @@
     "node": "8.* || >= 10.*"
   },
   "dependencies": {
-    "jshint": "^2.10.2"
+    "jshint": "^2.10.2",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0"
   }
 }

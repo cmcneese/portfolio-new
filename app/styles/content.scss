@@ -10,22 +10,23 @@
     text-transform: uppercase;
     filter: grayscale(60%);
     // background-image: url('app/img/CoffeeOptimized.jpg')top center/cover fixed;
-    background-image: image('./img/CoffeeOptimized.jpg') top center/cover fixed;
+    //background-image: image('./img/CoffeeOptimized.jpg') top center/cover fixed;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     min-height: 60vh;
     height: 100vh;
 
   }
 }
 
-.profile-pic {
-  // display: flex;
-  // align-items: center;
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    border: solid #fff 2px;
-    margin: auto;
-}
+//.profile-pic {
+//   display: flex;
+//   align-items: center;
+//    width: 100px;
+//    height: auto;
+//    border-radius: 50%;
+//    border: solid #fff 2px;
+//    margin: auto;
+//}
 
 .hero-tag {
   color: $c-white;
@@ -35,6 +36,9 @@
 .container {
   max-width: 65rem;
   margin: 0 auto;
+  & p {
+    color: $c-white;
+  }
 
   h4 {
     text-align: center;

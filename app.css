@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+.navbar {
+  color: #fff;
+}
+
+.lower-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+}
+.lower-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lower-nav__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 22rem;
+  margin: 0;
+}
+.lower-nav__group--nav-item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.section {
+  padding: 1rem;
+}
+.section--hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0rem;
+  background: rgb(245, 245, 245);
+  text-align: center;
+  text-transform: uppercase;
+  filter: grayscale(60%);
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  min-height: 60vh;
+  height: 100vh;
+}
+
+.hero-tag {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+.container p {
+  color: rgb(255, 255, 255);
+}
+.container h4 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+  .row--mobile-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.row__item {
+  flex-basis: calc(50% - 2rem);
+  min-height: 1rem;
+  margin: 1rem;
+}
+@media (min-width: 780px) {
+  .row__item--large {
+    flex-basis: calc(75% - 2rem);
+  }
+  .row__item--small {
+    flex-basis: calc(25% - 2rem);
+  }
+}
+
+.row--middle {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem;
+}
+@media (max-width: 480px) {
+  .row--middle {
+    flex-direction: column;
+  }
+  .row--middle--mobile-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.row--middle__item {
+  flex-basis: calc(50% - 2rem);
+  min-height: 1rem;
+  margin: 1rem;
+}
+@media (min-width: 780px) {
+  .row--middle__item--large {
+    flex-basis: calc(75% - 2rem);
+  }
+  .row--middle__item--small {
+    flex-basis: calc(25% - 2rem);
+  }
+}
+
+.grid-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  /* // flex-basis: calc(100% / 2 - 4rem); */
+  border-radius: 5px;
+  margin: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.top-box {
+  background: #AACCFF;
+  padding: 1rem;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+}
+
+.chip {
+  position: absolute;
+  width: 5rem;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(45, 62, 79);
+  border-radius: 2px;
+  padding: 0.5rem;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.skills-card {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills-card_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgb(0, 0, 0);
+}
+
+@media (max-width: 720px) {
+  .grid {
+    flex-direction: column;
+  }
+}
+.h4 {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+.full-page__content {
+  flex-grow: 1;
+}
+
+.profile-pic {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+  border: solid white 2px;
+}
+
+.about-picture {
+  position: relative;
+}
+.about-picture__img {
+  width: 100%;
+  height: 50%;
+  transition: 1s;
+  object-fit: cover;
+  filter: grayscale(4%);
+}
+.about-picture__caption {
+  position: absolute;
+  top: 11%;
+  left: 3%;
+  color: rgb(34, 34, 34);
+  visibility: hidden;
+}
+.about-picture__img:hover {
+  transition: 1s;
+  filter: grayscale(100%);
+}
+
+.about-picture:hover .about-picture__caption {
+  transition: 2s;
+  visibility: visible;
+}
+
+/*Style Nav Links to Right side of Nav Bar*/
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=app.css.map */
